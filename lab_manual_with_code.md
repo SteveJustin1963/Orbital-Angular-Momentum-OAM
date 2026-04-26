@@ -393,7 +393,7 @@ def radial_profile(filename):
 
 ## Expected Result
 
-A plot of \(r_{\max}^2\) against \(|l|\) should look roughly linear:
+A plot of $\(r_{\max}^2\)$ against $\(|l|\)$ should look roughly linear:
 
 $$
 \[
@@ -473,7 +473,7 @@ l\phi-k_xx-\delta
 \]
 $$
 
-creates forked/spiral-like interference fringes. Near the singularity, one fringe splits. The number of fork branches tells you \(|l|\). The sign of the fork indicates the handedness.
+creates forked/spiral-like interference fringes. Near the singularity, one fringe splits. The number of fork branches tells you $\(|l|\)$. The sign of the fork indicates the handedness.
 
 ## Python: Simulate Forked Interference Fringes
 
@@ -506,7 +506,7 @@ for l in [1, 2, -1, -2]:
 
 ## Expected Result
 
-You should see forked or spiral-like fringes. With \(l=1\), one extra/missing fringe appears. With \(l=2\), two appear.
+You should see forked or spiral-like fringes. With $\(l=1\)$, one extra/missing fringe appears. With $\(l=2\)$, two appear.
 
 ---
 
@@ -529,7 +529,7 @@ Before using an LCD panel, prove the basic polarization law.
 
 ## Maths: Malus Law
 
-If linearly polarized light passes through an analyser at relative angle \(\theta\):
+If linearly polarized light passes through an analyser at relative angle $\(\theta\)$:
 
 $$
 \[
@@ -582,7 +582,7 @@ plt.show()
 
 ## Expected Result
 
-$ A \(\cos^2\theta\)$ curve. This gives you a working polarizer/analyser setup for Experiment 6.
+A $\(\cos^2\theta\)$ curve. This gives you a working polarizer/analyser setup for Experiment 6.
 
 ---
 
@@ -625,7 +625,7 @@ $$
 \]
 $$
 
-A layer of thickness \(d\) creates phase retardance:
+A layer of thickness $\(d\)$ creates phase retardance:
 
 $$
 \[
@@ -641,7 +641,7 @@ I=I_0\sin^2(2\theta)\sin^2\left(\frac{\delta}{2}\right)
 \]
 $$
 
-where \(\theta\) is the angle between the liquid-crystal optical axis and the polarizer axis.
+where $\(\theta\)$ is the angle between the liquid-crystal optical axis and the polarizer axis.
 
 This is the key bridge to the liquid-crystal toron work: liquid crystals create spatially varying birefringence, and spatially varying birefringence can act like a synthetic gauge field for light.
 
@@ -735,7 +735,7 @@ $$
 \]
 $$
 
-For a thin obstacle of width \(a\), the diffraction minima approximately satisfy:
+For a thin obstacle of width $\(a\)$, the diffraction minima approximately satisfy:
 
 $$
 \[
@@ -792,7 +792,7 @@ You should see ring-like diffraction features and dark regions. It will not be a
 
 ---
 
-# Experiment 8 — Astigmatic Transformation: Measure \(|l|\) With a Tilted Lens
+# Experiment 8 — Astigmatic Transformation: Measure $\(|l|\)$ With a Tilted Lens
 
 **Difficulty:** Hard  
 **Original connection:** This adds a serious diagnostic tool missing from the original list.  
@@ -829,7 +829,7 @@ For example:
 | 2 | 3 |
 | 3 | 4 |
 
-The orientation of the pattern flips for \(+l\) versus \(-l\).
+The orientation of the pattern flips for $\(+l\)$ versus $\(-l\)$.
 
 This is not as clean with a rough printed grating, but it is a powerful real optics method.
 
@@ -873,7 +873,7 @@ for l in [0, 1, 2, 3]:
 
 ## Expected Result
 
-Near the focus, the vortex ring should collapse into multiple lobes/stripes. The count gives another estimate of \(|l|\).
+Near the focus, the vortex ring should collapse into multiple lobes/stripes. The count gives another estimate of $\(|l|\)$.
 
 ---
 
@@ -903,7 +903,7 @@ $$
 \]
 $$
 
-For \(P=5\text{ mW}\), \(l=1\), and \(\lambda=532\text{ nm}\):
+For $\(P=5\text{ mW}\)$, $\(l=1\)$, and $\(\lambda=532\text{ nm}\)$:
 
 $$
 \[
@@ -927,7 +927,7 @@ Do the calculation and prove why the paper experiment is mostly a lesson in scal
 
 ## Better Experiment B — Rotational Doppler Demonstration
 
-If a rotating object or optical element changes angular momentum from \(l_{\text{in}}\) to \(l_{\text{out}}\), the optical frequency shift is:
+If a rotating object or optical element changes angular momentum from $\(l_{\text{in}}\)$ to $\(l_{\text{out}}\)$, the optical frequency shift is:
 
 $$
 \[
@@ -943,7 +943,7 @@ $$
 \]
 $$
 
-where \(\Omega\) is the rotation rate in rad/s.
+where $\(\Omega\)$ is the rotation rate in rad/s.
 
 You cannot see the optical frequency directly with a phone, but you may detect intensity modulation if a rotating mask converts the phase pattern into amplitude flicker.
 
@@ -1006,13 +1006,13 @@ Use different vortex charges as symbols:
 
 | Symbol | OAM charge |
 |---|---:|
-| A | \(l=-2\) |
-| B | \(l=-1\) |
-| C | \(l=0\) |
-| D | \(l=+1\) |
-| E | \(l=+2\) |
+| A | $\(l=-2\)$ |
+| B | $\(l=-1\)$ |
+| C | $\(l=0\)$ |
+| D | $\(l=+1\)$ |
+| E | $\(l=+2\)$ |
 
-To decode charge \(l\), apply the opposite phase:
+To decode charge $\(l\)$, apply the opposite phase:
 
 $$
 \[
@@ -1020,7 +1020,7 @@ e^{-il\phi}
 \]
 $$
 
-If the incoming mode is \(e^{il\phi}\), the decoder gives:
+If the incoming mode is $\(e^{il\phi}\)$, the decoder gives:
 
 $$
 \[
@@ -1052,11 +1052,11 @@ $$
 \]
 $$
 
-This is the mathematical reason different \(l\) values can carry separate channels.
+This is the mathematical reason different $\(l\)$ values can carry separate channels.
 
 ## Simple Physical Setup
 
-1. Prepare fork gratings for \(l=-2,-1,0,+1,+2\).
+1. Prepare fork gratings for $\(l=-2,-1,0,+1,+2\)$.
 2. Sender inserts one fork grating to encode a symbol.
 3. Receiver inserts a conjugate grating.
 4. Observe the central spot:
@@ -1147,14 +1147,14 @@ It will create a folder called `vortex_outputs`.
 | # | Experiment | Difficulty | Main maths |
 |---:|---|---|---|
 | 1 | Beam profiler | Easy | Gaussian beam, divergence |
-| 2 | Fork grating vortex | Easy | \(e^{il\phi}\), grating equation |
-| 3 | Charge counter | Easy–Medium | \(r_{\max}=w\sqrt{|l|/2}\) |
-| 4 | Interference proof | Medium | \(I=|E_v+E_p|^2\) |
-| 5 | Malus law | Medium | \(I=I_0\cos^2\theta\) |
-| 6 | LCD birefringence | Medium | \(\delta=2\pi\Delta nd/\lambda\), Jones calculus |
+| 2 | Fork grating vortex | Easy | $\(e^{il\phi}\)$, grating equation |
+| 3 | Charge counter | Easy–Medium | $\(r_{\max}=w\sqrt{|l|/2}\)$ |
+| 4 | Interference proof | Medium | $\(I=|E_v+E_p|^2\)$ |
+| 5 | Malus law | Medium | $\(I=I_0\cos^2\theta\)$ |
+| 6 | LCD birefringence | Medium | $\(\delta=2\pi\Delta nd/\lambda\)$, Jones calculus |
 | 7 | Bottle-like beam | Medium–Hard | Fourier diffraction |
 | 8 | Astigmatic transform | Hard | LG/HG mode conversion |
-| 9 | OAM transfer / Doppler | Hard | \(\tau=Pl/\omega\), \(\Delta\omega=\Delta l\Omega\) |
+| 9 | OAM transfer / Doppler | Hard | $\(\tau=Pl/\omega\)$, $\(\Delta\omega=\Delta l\Omega\)$ |
 | 10 | OAM optical link | Hardest | OAM orthogonality |
 
 ---
