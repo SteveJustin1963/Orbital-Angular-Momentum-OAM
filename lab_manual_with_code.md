@@ -34,16 +34,14 @@ A green 532 nm laser looks bright because the eye is very sensitive near green. 
 
 An optical vortex has a phase that winds around the beam axis:
 
-$$
 \[
 E_l(r,\phi,z)=A(r,z)e^{i l\phi}e^{ikz}
 \]
-$$
 
 where:
 
-- $ l $ is the **topological charge**.
-- $ \phi=\operatorname{atan2}(y,x) $ is the azimuthal angle.
+- \(l\) is the **topological charge**.
+- \(\phi=\operatorname{atan2}(y,x)\) is the azimuthal angle.
 - \(e^{il\phi}\) is the helical phase term.
 - \(l>0\) and \(l<0\) have opposite handedness.
 - \(l=0\) is an ordinary non-vortex beam.
