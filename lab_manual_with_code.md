@@ -38,7 +38,7 @@ $\[ E_l(r,\phi,z)=A(r,z)e^{i l\phi}e^{ikz} \]$
 
 where:
 
-- \(l\) is the **topological charge**.
+- $\(l\)$ is the **topological charge**.
 - \(\phi=\operatorname{atan2}(y,x)\) is the azimuthal angle.
 - \(e^{il\phi}\) is the helical phase term.
 - \(l>0\) and \(l<0\) have opposite handedness.
