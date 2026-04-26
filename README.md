@@ -516,13 +516,13 @@ In complex structured media, especially with spin-orbit coupling or non-Abelian 
 The ideal spiral phase mask is
 
 $$
-\Phi_{\text{vortex}}(x,y)=\ell\operatorname{atan2}(y,x).
+\Phi_{\text{vortex}}(x,y)=\ell\,\text{atan2}(y,x).
 $$
 
 Its transmission is
 
 $$
-T_{\text{phase}}(x,y)=\exp\left[i\ell\operatorname{atan2}(y,x)\right].
+T_{\text{phase}}(x,y)=\exp\left[i\ell\,\mathrm{atan2}(y,x)\right].
 $$
 
 A plane wave passing through that ideal phase mask acquires the vortex phase.
@@ -532,13 +532,13 @@ A plane wave passing through that ideal phase mask acquires the vortex phase.
 A practical computer-generated hologram combines a linear grating with the vortex phase:
 
 $$
-\Phi_{\text{holo}}(x,y)=\frac{2\pi x}{d}+\ell\operatorname{atan2}(y,x).
+\Phi_{\text{holo}}(x,y)=\frac{2\pi x}{d}+\ell\,\mathrm{atan2}(y,x).
 $$
 
 A phase-only version can be written as
 
 $$
-T_{\text{holo}}(x,y)=\exp\left[i\left(\frac{2\pi x}{d}+\ell\operatorname{atan2}(y,x)\right)\right].
+T_{\text{holo}}(x,y)=\exp\left[i\left(\frac{2\pi x}{d}+\ell\,\mathrm{atan2}(y,x)\right)\right].
 $$
 
 This sends the desired vortex mostly into one first diffraction order.
@@ -548,7 +548,7 @@ This sends the desired vortex mostly into one first diffraction order.
 For a printed transparency, a binary amplitude grating is more realistic:
 
 $$
-T_{\text{binary}}(x,y)=\frac{1}{2}\left[1+\operatorname{sgn}\left(\cos\left(\frac{2\pi x}{d}+\ell\operatorname{atan2}(y,x)\right)\right)\right].
+T_{\text{binary}}(x,y)=\frac{1}{2}\left[1+\mathrm{sgn}\left(\cos\left(\frac{2\pi x}{d}+\ell\,\mathrm{atan2}(y,x)\right)\right)\right].
 $$
 
 Because this is a binary amplitude mask, the output is split into multiple diffraction orders. The useful vortex is normally observed in a side order, not in the central zero order.
@@ -734,8 +734,8 @@ The two are related like this:
 | Rayleigh range | $z_R=\pi w_0^2/\lambda$ | diffraction length scale |
 | Simple vortex intensity | $I\propto r^{2|\ell|}e^{-2r^2/w^2}$ | doughnut profile |
 | Peak radius for $p=0$ | $r_{\max}=w\sqrt{|\ell|/2}$ | dark core grows with $|\ell|$ |
-| Ideal spiral phase mask | $T=e^{i\ell\operatorname{atan2}(y,x)}$ | directly imposes vortex phase |
-| Fork hologram phase | $\Phi=2\pi x/d+\ell\operatorname{atan2}(y,x)$ | separates vortex into diffraction order |
+| Ideal spiral phase mask | $T=e^{i\ell\,\mathrm{atan2}(y,x)}$ | directly imposes vortex phase |
+| Fork hologram phase |$\Phi=\frac{2\pi x}{d}+\ell\,\mathrm{atan2}(y,x)$ | separates vortex into diffraction order |
 | Interference intensity | $I=A^2+B^2+2AB\cos(\ell\phi-k_xx-\delta)$ | forked/spiral-like fringes |
 
 ---
