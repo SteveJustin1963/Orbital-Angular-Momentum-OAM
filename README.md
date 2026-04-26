@@ -1,6 +1,6 @@
 # Quantum “Optical Tornadoes”: Liquid-Crystal Torons, Ground-State OAM Lasing, and a DIY Fork-Grating Demonstration
 
-**Status:** corrected, expanded, and source-checked on 26 April 2026.  
+ 
 **Core claim:** the 2026 breakthrough is not merely “making twisted light.” Optical vortices have been known for decades. The new result is **ground-state orbital-angular-momentum (OAM) lasing from liquid-crystal torons embedded in an optical microcavity**.
 
 ---
@@ -15,7 +15,7 @@ That matters because the lowest-energy state is usually the easiest state for a 
 
 ---
 
-## 2. Corrected One-Paragraph Explanation
+## 2. One-Paragraph Explanation
 
 An **optical tornado** is a beam of light whose wavefront twists around the propagation axis. Mathematically, the key vortex factor is $e^{i\ell\phi}$, where $\ell$ is the topological charge and $\phi$ is the angle around the beam centre. This spiral phase makes the centre of the beam a **phase singularity**, so the intensity must fall to zero there, producing a dark “eye.” In the 2026 liquid-crystal work, tiny topological defects called **torons** acted as microscopic light traps inside an optical microcavity. Their spatially varying birefringence created a **synthetic magnetic/gauge-field effect** for photons. This made the microcavity’s ground state carry OAM, enabling coherent, directional vortex lasing from a self-organised soft-material structure.
 
