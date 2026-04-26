@@ -308,8 +308,10 @@ $$
 and
 
 $$
-\phi = \operatorname{atan2}(y,x).
+\phi = \mathrm{atan2}(y,x).
 $$
+
+xx
 
 The use of $\operatorname{atan2}(y,x)$ matters because it gives the correct angle in all four quadrants. A plain $\arctan(y/x)$ loses quadrant information.
 
