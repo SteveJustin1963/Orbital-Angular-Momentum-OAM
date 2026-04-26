@@ -34,9 +34,11 @@ A green 532 nm laser looks bright because the eye is very sensitive near green. 
 
 An optical vortex has a phase that winds around the beam axis:
 
+$$
 \[
 E_l(r,\phi,z)=A(r,z)e^{i l\phi}e^{ikz}
 \]
+$$
 
 where:
 
