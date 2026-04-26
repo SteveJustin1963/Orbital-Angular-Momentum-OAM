@@ -311,9 +311,9 @@ $$
 \phi = \mathrm{atan2}(y,x).
 $$
 
-xx
+ 
 
-The use of $\operatorname{atan2}(y,x)$ matters because it gives the correct angle in all four quadrants. A plain $\arctan(y/x)$ loses quadrant information.
+Use `atan2(y,x)` to preserve the correct quadrant and avoid a discontinuity error.
 
 ---
 
