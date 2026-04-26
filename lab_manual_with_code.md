@@ -39,16 +39,14 @@ $\[ E_l(r,\phi,z)=A(r,z)e^{i l\phi}e^{ikz} \]$
 where:
 
 - $\(l\)$ is the **topological charge**.
-- \(\phi=\operatorname{atan2}(y,x)\) is the azimuthal angle.
-- \(e^{il\phi}\) is the helical phase term.
-- \(l>0\) and \(l<0\) have opposite handedness.
-- \(l=0\) is an ordinary non-vortex beam.
+- $\(\phi=\operatorname{atan2}(y,x)\)$ is the azimuthal angle.
+- $\(e^{il\phi}\)$ is the helical phase term.
+- $\(l>0\) and \(l<0\) have opposite handedness.
+- $\(l=0\)$ is an ordinary non-vortex beam.
 
 When you go once around the centre:
- 
-\[
-\Delta \Phi = \Phi(\phi+2\pi)-\Phi(\phi)=2\pi l
-\]
+
+$\[\Delta \Phi = \Phi(\phi+2\pi)-\Phi(\phi)=2\pi l \]$
  
 
 At the exact centre, \(\phi\) is undefined. A physical wave cannot have a single point with every possible phase at once, so the amplitude goes to zero:
