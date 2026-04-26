@@ -33,11 +33,11 @@ A green 532 nm laser looks bright because the eye is very sensitive near green. 
 ## Core Theory Used Throughout
 
 An optical vortex has a phase that winds around the beam axis:
-
+$$
 \[
 E_l(r,\phi,z)=A(r,z)e^{i l\phi}e^{ikz}
 \]
-
+$$
 where:
 
 - \(l\) is the **topological charge**.
@@ -47,56 +47,64 @@ where:
 - \(l=0\) is an ordinary non-vortex beam.
 
 When you go once around the centre:
-
+$$
 \[
 \Delta \Phi = \Phi(\phi+2\pi)-\Phi(\phi)=2\pi l
 \]
+$$
 
 At the exact centre, \(\phi\) is undefined. A physical wave cannot have a single point with every possible phase at once, so the amplitude goes to zero:
-
+$$
 \[
 A(0,z)=0
 \]
-
+$$
 Therefore:
-
+$$
 \[
 I(0,z)=|E(0,z)|^2=0
 \]
-
+$$
 That is the dark eye of the optical tornado.
 
 For the common \(p=0\) Laguerre-Gaussian vortex mode:
 
+$$
 \[
 E_l(r,\phi) \propto
 \left(\frac{\sqrt{2}r}{w}\right)^{|l|}
 e^{-r^2/w^2}
 e^{il\phi}
 \]
+$$
 
 and the intensity is:
 
+$$
 \[
 I_l(r)\propto
 \left(\frac{2r^2}{w^2}\right)^{|l|}
 e^{-2r^2/w^2}
 \]
+$$
 
 The bright ring radius is approximately:
 
+$$
 \[
 r_{\max}=w\sqrt{\frac{|l|}{2}}
 \]
+$$
 
 This is why higher \(|l|\) vortices have a larger dark centre and a larger bright ring.
 
 Each photon in a clean LG vortex mode carries orbital angular momentum:
 
+$$
 \[
 L_z=l\hbar
 \]
-
+$$
 This is separate from spin angular momentum, which comes from circular polarization.
 
 ---
@@ -123,27 +131,35 @@ Before making a vortex, learn what your ordinary laser beam looks like and how i
 
 An ideal Gaussian beam radius evolves as:
 
+$$
 \[
 w(z)=w_0\sqrt{1+\left(\frac{z-z_0}{z_R}\right)^2}
 \]
+$$
 
 where:
 
+$$
 \[
 z_R=\frac{\pi w_0^2}{\lambda}
 \]
+$$
 
 For a far-field beam, the divergence half-angle is approximately:
 
+$$
 \[
 \theta \approx \frac{w_2-w_1}{z_2-z_1}
 \]
+$$
 
 For a diffraction-limited Gaussian beam:
 
+$$
 \[
 \theta_{\min}\approx \frac{\lambda}{\pi w_0}
 \]
+$$
 
 Cheap laser pointers are not usually diffraction-limited, so measured divergence is often worse.
 
@@ -209,6 +225,7 @@ Use a printed fork grating to convert a normal laser beam into one or more optic
 
 A simple binary fork grating can be written as:
 
+$$
 \[
 t(x,y)=\frac{1}{2}\left[1+\operatorname{sgn}
 \left(
@@ -216,6 +233,7 @@ t(x,y)=\frac{1}{2}\left[1+\operatorname{sgn}
 \right)
 \right]
 \]
+$$
 
 where:
 
@@ -225,21 +243,27 @@ where:
 
 A grating sends light into diffraction orders:
 
+$$
 \[
 d\sin\theta_m=m\lambda
 \]
+$$
 
 For small angles:
 
+$$
 \[
 x_m \approx L\frac{m\lambda}{d}
 \]
+$$
 
 A fork grating does not simply make the whole outgoing beam a vortex. It produces vortex beams mainly in the diffracted side orders. The \(m\)-th diffraction order approximately carries charge:
 
+$$
 \[
 l_m=m l
 \]
+$$
 
 depending on sign convention.
 
@@ -287,9 +311,11 @@ You should see a central undiffracted spot and side spots. The side spots should
 
 Photograph vortex rings for \(l=1,2,3\), measure their ring radius, and test whether:
 
+$$
 \[
 r_{\max}\propto \sqrt{|l|}
 \]
+$$
 
 ## Setup
 
@@ -303,27 +329,35 @@ r_{\max}\propto \sqrt{|l|}
 
 For \(p=0\) LG modes:
 
+$$
 \[
 I_l(r)\propto r^{2|l|}e^{-2r^2/w^2}
 \]
+$$
 
 Take the derivative:
 
+$$
 \[
 \frac{d}{dr}\left(r^{2|l|}e^{-2r^2/w^2}\right)=0
 \]
+$$
 
 This gives:
 
+$$
 \[
 r_{\max}=w\sqrt{\frac{|l|}{2}}
 \]
+$$
 
 Therefore:
 
+$$
 \[
 r_{\max}^2 \propto |l|
 \]
+$$
 
 This is more reliable than measuring the “dark hole diameter” by eye.
 
@@ -375,9 +409,11 @@ def radial_profile(filename):
 
 A plot of \(r_{\max}^2\) against \(|l|\) should look roughly linear:
 
+$$
 \[
 r_{\max}^2 = C |l|
 \]
+$$
 
 Do not expect perfection with a printed transparency. The beam is not a perfect LG mode, but the trend should be visible.
 
@@ -412,34 +448,44 @@ Before building it, simulate the pattern with Python below.
 
 Let the vortex beam be:
 
+$$
 \[
 E_v=A(r)e^{il\phi}
 \]
+$$
 
 Let a tilted plane-wave reference be:
 
+$$
 \[
 E_p=A_0e^{ik_x x+i\delta}
 \]
+$4
 
 The intensity is:
 
+$$
 \[
 I=|E_v+E_p|^2
 \]
+$$
 
 If the amplitudes are similar:
 
+$$
 \[
 I \approx I_v+I_p+2\sqrt{I_v I_p}
 \cos(l\phi-k_xx-\delta)
 \]
+$$
 
 The phase term:
 
+$$
 \[
 l\phi-k_xx-\delta
 \]
+$$
 
 creates forked/spiral-like interference fringes. Near the singularity, one fringe splits. The number of fork branches tells you \(|l|\). The sign of the fork indicates the handedness.
 
@@ -499,21 +545,27 @@ Before using an LCD panel, prove the basic polarization law.
 
 If linearly polarized light passes through an analyser at relative angle \(\theta\):
 
+$$
 \[
 I(\theta)=I_0\cos^2\theta
 \]
+$$
 
 For crossed polarizers:
 
+$$
 \[
 \theta=90^\circ,\quad I\approx0
 \]
+$$
 
 Real polarizers leak some light, so:
 
+$$
 \[
 I(\theta)=I_{\text{leak}}+I_0\cos^2\theta
 \]
+$$
 
 ## Python: Fit Malus Law
 
@@ -544,7 +596,7 @@ plt.show()
 
 ## Expected Result
 
-A \(\cos^2\theta\) curve. This gives you a working polarizer/analyser setup for Experiment 6.
+$ A \(\cos^2\theta\)$ curve. This gives you a working polarizer/analyser setup for Experiment 6.
 
 ---
 
@@ -573,27 +625,35 @@ Do not smash LCD glass. It can splinter.
 
 A birefringent material has two refractive indices:
 
+$$
 \[
 n_e,\quad n_o
 \]
+$$
 
 The birefringence is:
 
+$$
 \[
 \Delta n=n_e-n_o
 \]
+$$
 
 A layer of thickness \(d\) creates phase retardance:
 
+$$
 \[
 \delta=\frac{2\pi}{\lambda}\Delta n d
 \]
+$$
 
 A simple retarder between crossed polarizers gives:
 
+$$
 \[
 I=I_0\sin^2(2\theta)\sin^2\left(\frac{\delta}{2}\right)
 \]
+$$
 
 where \(\theta\) is the angle between the liquid-crystal optical axis and the polarizer axis.
 
@@ -603,6 +663,7 @@ This is the key bridge to the liquid-crystal toron work: liquid crystals create 
 
 The Jones matrix for a retarder is:
 
+$$
 \[
 J(\theta,\delta)=
 R(-\theta)
@@ -612,9 +673,11 @@ e^{-i\delta/2} & 0\\
 \end{bmatrix}
 R(\theta)
 \]
+$$
 
 where:
 
+$$
 \[
 R(\theta)=
 \begin{bmatrix}
@@ -622,6 +685,7 @@ R(\theta)=
 \sin\theta & \cos\theta
 \end{bmatrix}
 \]
+$$
 
 ## Python: Simulate Crossed-Polarizer LCD Brightness
 
@@ -679,21 +743,27 @@ A true optical bottle beam is a three-dimensional dark region enclosed by light.
 
 For a circular aperture, the far-field diffraction angle is approximately:
 
+$$
 \[
 \theta \approx 1.22\frac{\lambda}{D}
 \]
+$$
 
 For a thin obstacle of width \(a\), the diffraction minima approximately satisfy:
 
+$$
 \[
 a\sin\theta=m\lambda
 \]
+$$
 
 An annular aperture can be thought of as an outer circular aperture minus an inner circular aperture:
 
+$$
 \[
 E_{\text{annulus}}=E_{\text{outer}}-E_{\text{inner}}
 \]
+$$
 
 This subtraction creates ring-like intensity distributions and dark axial regions.
 
@@ -758,9 +828,11 @@ Use a tilted spherical lens or cylindrical lens to turn a vortex beam into a lob
 
 A Laguerre-Gaussian vortex mode can be decomposed into Hermite-Gaussian modes under astigmatic transformation. A useful lab rule is:
 
+$$
 \[
 N_{\text{lobes}} \approx |l|+1
 \]
+$$
 
 For example:
 
@@ -831,26 +903,35 @@ The original idea said a suspended paper shape may rotate due to OAM transfer. W
 
 The optical OAM torque scale is:
 
+$$
 \[
 \tau = \frac{P l}{\omega}
 \]
+$$
 
 where:
 
+$$
 \[
 \omega = \frac{2\pi c}{\lambda}
 \]
+$$
 
 For \(P=5\text{ mW}\), \(l=1\), and \(\lambda=532\text{ nm}\):
 
+$$
 \[
 \omega\approx3.54\times10^{15}\text{ rad/s}
 \]
+$$
 
+$$
 \[
 \tau\approx\frac{5\times10^{-3}}{3.54\times10^{15}}
 \approx1.4\times10^{-18}\text{ N m}
 \]
+$$
+
 
 That is far too small to spin a normal paper object in a convincing way.
 
@@ -862,15 +943,19 @@ Do the calculation and prove why the paper experiment is mostly a lesson in scal
 
 If a rotating object or optical element changes angular momentum from \(l_{\text{in}}\) to \(l_{\text{out}}\), the optical frequency shift is:
 
+$$
 \[
 \Delta \omega = (l_{\text{out}}-l_{\text{in}})\Omega
 \]
+$$
 
 or:
 
+$$
 \[
 \Delta f = \frac{(l_{\text{out}}-l_{\text{in}})\Omega}{2\pi}
 \]
+$$
 
 where \(\Omega\) is the rotation rate in rad/s.
 
@@ -943,21 +1028,27 @@ Use different vortex charges as symbols:
 
 To decode charge \(l\), apply the opposite phase:
 
+$$
 \[
 e^{-il\phi}
 \]
+$$
 
 If the incoming mode is \(e^{il\phi}\), the decoder gives:
 
+$$
 \[
 e^{il\phi}e^{-il\phi}=1
 \]
+$$
 
 which becomes a bright Gaussian-like centre. If the wrong decoder is used:
 
+$$
 \[
 e^{il\phi}e^{-il'\phi}=e^{i(l-l')\phi}
 \]
+$$
 
 a vortex remains, with a dark centre.
 
@@ -965,6 +1056,7 @@ a vortex remains, with a dark centre.
 
 OAM modes are orthogonal in angle:
 
+$$
 \[
 \int_0^{2\pi}e^{il\phi}e^{-il'\phi}d\phi
 =
@@ -972,6 +1064,7 @@ OAM modes are orthogonal in angle:
 =
 2\pi\delta_{ll'}
 \]
+$$
 
 This is the mathematical reason different \(l\) values can carry separate channels.
 
