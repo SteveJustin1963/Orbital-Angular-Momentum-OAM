@@ -214,20 +214,18 @@ Use a printed fork grating to convert a normal laser beam into one or more optic
 A simple binary fork grating can be written as:
 
 $$
-\[
-t(x,y)=\frac{1}{2}\left[1+\operatorname{sgn}
+t(x,y)=\frac{1}{2}\left[1+\mathrm{sgn}
 \left(
-\cos\left(\frac{2\pi x}{d}+l\operatorname{atan2}(y,x)\right)
+\cos\left(\frac{2\pi x}{d}+l\,\mathrm{atan2}(y,x)\right)
 \right)
 \right]
-\]
 $$
 
 where:
 
-- \(d\) is the grating period.
-- \(l\) is the fork charge.
-- \(\operatorname{atan2}(y,x)\) is essential; plain \(\arctan(y/x)\) loses quadrant information.
+- $\(d\)$ is the grating period.
+- $\(l\)$ is the fork charge.
+- $\(\mathrm{atan2}(y,x)\)$ is essential; plain $\(\arctan(y/x)\)$ loses quadrant information.
 
 A grating sends light into diffraction orders:
 
