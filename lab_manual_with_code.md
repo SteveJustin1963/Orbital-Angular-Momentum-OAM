@@ -59,7 +59,7 @@ $\[ I(0,z)=|E(0,z)|^2=0 \]$
 
 That is the dark eye of the optical tornado.
 
-For the common \(p=0\) Laguerre-Gaussian vortex mode:
+For the common $\(p=0\)$ Laguerre-Gaussian vortex mode:
 
 $$
 \[
@@ -203,7 +203,7 @@ Use a printed fork grating to convert a normal laser beam into one or more optic
 
 ## Setup
 
-1. Generate fork gratings for \(l=1,2,3\).
+1. Generate fork gratings for $\(l=1,2,3\)$.
 2. Print them on transparency film at the highest resolution possible.
 3. Shine the laser through the fork dislocation.
 4. Project the diffraction pattern on a wall 1–3 m away.
@@ -243,7 +243,7 @@ x_m \approx L\frac{m\lambda}{d}
 \]
 $$
 
-A fork grating does not simply make the whole outgoing beam a vortex. It produces vortex beams mainly in the diffracted side orders. The \(m\)-th diffraction order approximately carries charge:
+A fork grating does not simply make the whole outgoing beam a vortex. It produces vortex beams mainly in the diffracted side orders. The $\(m\)$-th diffraction order approximately carries charge:
 
 $$
 \[
@@ -274,7 +274,7 @@ for l in [1, 2, 3, -1, -2, -3]:
 
 ## Expected Result
 
-You should see a central undiffracted spot and side spots. The side spots should show a dark central hole. Higher \(|l|\) should give a larger hole and wider ring.
+You should see a central undiffracted spot and side spots. The side spots should show a dark central hole. Higher $\(|l|\)$ should give a larger hole and wider ring.
 
 ## Common Problems
 
@@ -291,11 +291,11 @@ You should see a central undiffracted spot and side spots. The side spots should
 
 **Difficulty:** Easy–Medium  
 **Original connection:** This expands the original “Topological Charge Counter” bonus.  
-**What you learn:** Quantitative measurement of \(|l|\), radial intensity profiles, scaling laws.
+**What you learn:** Quantitative measurement of $\(|l|\)$, radial intensity profiles, scaling laws.
 
 ## Aim
 
-Photograph vortex rings for \(l=1,2,3\), measure their ring radius, and test whether:
+Photograph vortex rings for $\(l=1,2,3\)$, measure their ring radius, and test whether:
 
 $$
 \[
@@ -307,13 +307,13 @@ $$
 
 1. Use the fork gratings from Experiment 2.
 2. Keep screen distance fixed.
-3. Photograph the same diffraction order for each \(l\).
+3. Photograph the same diffraction order for each $\(l\)$.
 4. Crop the vortex spot only.
 5. Use Python to find the radial intensity profile.
 
 ## Maths
 
-For \(p=0\) LG modes:
+For $\(p=0\)$ LG modes:
 
 $$
 \[
@@ -822,7 +822,7 @@ $$
 
 For example:
 
-| \(l\) | Expected lobe/stripe count |
+| $\(l\)$ | Expected lobe/stripe count |
 |---:|---:|
 | 0 | 1 |
 | 1 | 2 |
