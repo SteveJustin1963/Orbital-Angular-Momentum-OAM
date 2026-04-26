@@ -30,7 +30,7 @@ An **optical tornado** is a beam of light whose wavefront twists around the prop
 | “Sub-micron toron experiment.” | Safer: **microscale liquid-crystal microcavity experiment** unless exact dimensions are being quoted from the paper/figures. |
 | “Fork grating replicates the 2026 breakthrough.” | No. A fork grating demonstrates the **same OAM/vortex physics**, but it does **not** reproduce ground-state lasing, toron trapping, microcavity physics, or the non-Abelian gauge-field mechanism. |
 | “Plane wave becomes an optical vortex.” | More precise: the fork grating creates vortex beams mainly in selected **diffracted orders**. The zero order remains mostly non-vortex light. |
-| $\arctan(y/x)$ for the vortex phase. | Use $\operatorname{atan2}(y,x)$ to preserve the correct quadrant and avoid a discontinuity error. |
+| $\arctan(y/x)$ for the vortex phase. | Use $\phi=\mathrm{atan2}(y,x)$ to preserve the correct quadrant and avoid a discontinuity error. |
 | Interference equation called “the equation of a spiral.” | More precise: the interference condition gives **forked or spiral-like fringes** depending on geometry. The full equation contains $x=r\cos\phi$, so it is not simply $\phi=(kx+2\pi m)/\ell$. |
 
 ---
