@@ -88,18 +88,13 @@ r_{\max}=w\sqrt{\frac{|l|}{2}}
 \]
 $$
 
-This is why higher $\(|l|\)$ vortices have a larger dark centre and a larger bright ring.
+This is why higher $\|l|\$ vortices have a larger dark centre and a larger bright ring. xx
 
 Each photon in a clean LG vortex mode carries orbital angular momentum:
 
-$$
-\[
-L_z=l\hbar
-\]
-$$
-This is separate from spin angular momentum, which comes from circular polarization.
+$\[L_z=l\hbar\]$
 
-xx
+This is separate from spin angular momentum, which comes from circular polarization.
 ---
 
 # Experiment 1 — Baseline Beam Profiler and Divergence Measurement
