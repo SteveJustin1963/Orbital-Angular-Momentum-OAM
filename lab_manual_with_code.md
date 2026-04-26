@@ -47,11 +47,11 @@ where:
 - \(l=0\) is an ordinary non-vortex beam.
 
 When you go once around the centre:
-$$
+ 
 \[
 \Delta \Phi = \Phi(\phi+2\pi)-\Phi(\phi)=2\pi l
 \]
-$$
+ 
 
 At the exact centre, \(\phi\) is undefined. A physical wave cannot have a single point with every possible phase at once, so the amplitude goes to zero:
 $$
