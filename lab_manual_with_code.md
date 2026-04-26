@@ -41,28 +41,23 @@ where:
 - $\(l\)$ is the **topological charge**.
 - $(\phi=\mathrm{atan2}(y,x))$ is the azimuthal angle.
 - $\(e^{il\phi}\)$ is the helical phase term.
-- $\(l>0\) and \(l<0\) have opposite handedness.
+- $\(l>0\)$ and $\(l<0\)$ have opposite handedness.
 - $\(l=0\)$ is an ordinary non-vortex beam.
 
-xx
 
 When you go once around the centre:
 
 $\[\Delta \Phi = \Phi(\phi+2\pi)-\Phi(\phi)=2\pi l \]$
  
 
-At the exact centre, \(\phi\) is undefined. A physical wave cannot have a single point with every possible phase at once, so the amplitude goes to zero:
-$$
-\[
-A(0,z)=0
-\]
-$$
+At the exact centre, $\(\phi\)$ is undefined. A physical wave cannot have a single point with every possible phase at once, so the amplitude goes to zero:
+$\[ A(0,z)=0 \]$
+
 Therefore:
-$$
-\[
-I(0,z)=|E(0,z)|^2=0
-\]
-$$
+$\[ I(0,z)=|E(0,z)|^2=0 \]$
+
+xx
+
 That is the dark eye of the optical tornado.
 
 For the common \(p=0\) Laguerre-Gaussian vortex mode:
