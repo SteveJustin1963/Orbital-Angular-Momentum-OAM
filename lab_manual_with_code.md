@@ -88,7 +88,7 @@ r_{\max}=w\sqrt{\frac{|l|}{2}}
 \]
 $$
 
-This is why higher $\|l|\$ vortices have a larger dark centre and a larger bright ring. xx
+This is why higher $\|l|\$ vortices have a larger dark centre and a larger bright ring.  
 
 Each photon in a clean LG vortex mode carries orbital angular momentum:
 
